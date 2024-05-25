@@ -29,9 +29,8 @@ def ping_main(ip, port):
             print(f"{g}IP={ip} {w}||{c} Port={port} {w}||{lb} Latency={elapsed:.2f}ms")
             time.sleep(0.1)
         else:
-            while True:
-                print(f"{lr}IP={ip} {w}|| {lr}Port={port} {w}|| {lr}Connection Timed Out")
-                time.sleep(0.1)
+            print(f"{lr}IP={ip} {w}|| {lr}Port={port} {w}|| {lr}Connection Timed Out")
+            time.sleep(0.1)
 def main():
     if len(sys.argv) != 3:
         print(f"Usage: wping <ip> <port>")
